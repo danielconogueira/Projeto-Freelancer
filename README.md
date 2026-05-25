@@ -1,40 +1,74 @@
-# Projeto Freelancer
+# 💼 Projeto Freelancer — Automação Contábil
 
-Bot Assistente para Lançamentos Contábeis
-  
-Este projeto foi desenvolvido para automatizar o processo de lançamento contábil em um sistema corporativo que, originalmente, era repetitivo e demandava muito tempo. A solução criada permite que o usuário organize as informações em uma planilha Excel e, com base nisso, o bot realiza os lançamentos de forma autônoma, enquanto o usuário pode se concentrar em outras atividades.
+Automação de lançamentos contábeis desenvolvida em Python, utilizando Excel como fonte de dados e gerando relatórios formatados automaticamente. Projeto desenvolvido para automatizar processos manuais e repetitivos de controle financeiro.
 
+---
 
-Principais Funcionalidades
+## 🚀 Funcionalidades
 
-Automação de Lançamentos: O bot lê os dados da planilha Excel utilizando a biblioteca openpyxl e preenche automaticamente os campos do sistema contábil com a ajuda de pyautogui.
+- 📥 Leitura de lançamentos contábeis a partir de planilha Excel
+- ⚙️ Processamento e categorização automática dos lançamentos
+- 📊 Geração de relatório formatado com resumo financeiro
+- 📋 Exportação dos resultados para nova planilha Excel
+- 🖨️ Integração com impressão via pyperclip
 
-Copiar e Colar Preciso: A biblioteca pyperclip é utilizada para garantir a transferência fiel dos dados da planilha para o sistema.
+---
 
-Interação Automatizada: Simula cliques e interações no sistema com precisão, reduzindo erros humanos.
+## 🛠️ Tecnologias Utilizadas
 
-Flexível e Adaptável: O script pode ser ajustado para atender diferentes formatos de planilha e fluxos de trabalho contábeis.
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![Excel](https://img.shields.io/badge/Excel-217346?style=for-the-badge&logo=microsoftexcel&logoColor=white)
 
+- **Python 3.x**
+- **openpyxl** — leitura e escrita de arquivos Excel
+- **pyautogui** — automação de interface gráfica
+- **pyperclip** — manipulação de área de transferência
 
-Tecnologias Utilizadas
+---
 
-Python
-openpyxl para manipulação da planilha Excel.
-pyperclip para copiar e colar informações.
-pyautogui para automação das interações no sistema.
+## ⚙️ Como Executar
 
-Planilha Excel: Utilizada como base para o input dos dados.
+### Pré-requisitos
 
+- Python 3.8+
+- Microsoft Excel instalado (recomendado)
 
-Como Funciona
+### Instalação
 
-O usuário insere os dados necessários em uma planilha Excel com colunas específicas.
+```bash
+# Clone o repositório
+git clone https://github.com/danielconogueira/Projeto-Freelancer.git
 
-O bot lê os dados da planilha linha por linha e preenche os campos correspondentes no sistema.
+# Acesse a pasta
+cd Projeto-Freelancer
 
-Após o preenchimento, o bot realiza confirmações e reinicia o processo até completar todos os lançamentos.
+# Instale as dependências
+pip install openpyxl pyautogui pyperclip
+```
 
+### Execução
 
-Uso
+```bash
+python main.py
+```
 
-Este projeto é ideal para empresas que desejam automatizar tarefas contábeis repetitivas e aumentar a produtividade no ambiente de trabalho.
+---
+
+## 📁 Estrutura do Projeto
+
+```
+Projeto-Freelancer/
+│
+├── main.py              # Script principal
+├── lancamentos.xlsx     # Planilha de entrada com lançamentos
+├── relatorio.xlsx       # Relatório gerado
+└── README.md
+```
+
+---
+
+## 👨‍💻 Autor
+
+**Daniel Corrêa Nogueira**  
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/danielconogueira/)
+[![GitHub](https://img.shields.io/badge/GitHub-100000?style=flat&logo=github&logoColor=white)](https://github.com/danielconogueira)
